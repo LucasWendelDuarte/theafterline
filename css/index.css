@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+p,h1,h2,h3,label{
+  color: white;
+}
+
+.container-parallax {
+  text-align: center;
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Image/index/primeiroparallax.jpg);
+  background-size: cover;
+  background-position: center;
+  
+/*  segredo do parallax */
+  background-attachment: fixed;
+}
+
+
+
+.blank,
+.other {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+
+.second {
+  background-image:url(../Image/index/segundoparallax.jpg);
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card > a {
+  margin-bottom: 2em;
+}
+
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: .3em;;
+}
+
+.img-first {
+  background-image: url(../Image/index/primeiroparallax.jpg);
+}
+
+.img-second {
+  background-image: url(../Image/index/segundoparallax.jpg);
+}
+
+.img-third {
+  background-image: url(../Image/index/terceiroparallax.jpg);
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+.container-custom {
+  height: 100vh;
+}
+.left, .right {
+  height: 100%;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.right {
+  position: relative;
+}
+.right .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  text-align: center;
+}
+.right .image-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-20%);
+}
+.right img {
+  width: 100px;
+  margin: 10px;
+}
+.alinhamento{
+  transform: translateY(-20%);
+
+}
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+.container form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.container form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+.container form label {
+  margin-bottom: 5px;
+}
+.container form .checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container form .checkbox-group input {
+  margin-right: 5px;
+}
+.container form .submit-btn {
+  padding: 10px;
+  background: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+.container form .submit-btn:hover {
+  background: #003d80;
+}
+.container a {
+  color: #00aaff;
+  text-decoration: none;
+}
+.container a:hover {
+  text-decoration: underline;
+}
+/*FOOTER*/
+.pegi-rating {
+  height: 40px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
