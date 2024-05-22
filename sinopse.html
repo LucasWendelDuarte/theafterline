@@ -1,17 +1,192 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Sinopse</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/header.css">
-     
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-      <link type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-      
-    </head>
-    <body>
-      <header>
+  <head>
+  <title>Sinopse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/header.css">
+  <link type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    background-image: url("Image/index/segundoparallax.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.banner-content p {
+    font-size: 28px;
+    color: white;
+    font-family: sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2em;
+    }
+
+    .banner-content p {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 576px) {
+    .banner-content h1 {
+        font-size: 1.5em;
+    }
+
+    .banner-content p {
+        font-size: 1em;
+    }
+}
+
+.container-img {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-image: url("Image/index/BG.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 100px;
+}
+.grupo {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 7px;
+    border: none;
+}
+
+.imagem-com-descricao {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    background-color: black;
+ 
+}
+
+.imagem-com-descricao img {
+    max-width: 420px;
+    height: 320px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    transition: opacity 0.5 ease;
+}
+.imagem-com-descricao img:hover {
+  transform: scale(1.3);
+  transition: 0.6s;
+
+}
+.descricao {
+    font-size: 22px;
+    color: white;
+    margin-top: 15px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .grupo {
+        flex-wrap: wrap;
+    }
+
+    .imagem-com-descricao {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .imagem-com-descricao {
+        flex-basis: 100%;
+    }
+}
+h1 {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 100px;
+  font-family: sans-serif;
+}
+
+
+.text-area {
+   height: 600px;
+}
+.container-text {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+
+}
+.texto h1 {
+    font-size: 2em;
+    margin-top: 60px;
+}
+.texto p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+.button-1 {
+  background-color: rgb(238, 33, 36);
+  color: white;
+  font-size: 35px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 7px;
+  margin-top: 40px;
+}
+.button-1:hover {
+  background-color: white;
+  color: rgb(238, 33, 36);
+}
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    background-image: url("Image/index/BG.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.footer img {
+  max-width: 500px;
+  height: 400px;
+}
+
+  </style>
+
+  </head>
+  <body>
+
+    <header>
         <nav class="navbar navbar-expand-lg bg-menu">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img style="width: 10vh; height: 4vh;" src="Image/logonav.png"/></a>
@@ -19,7 +194,7 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -46,8 +221,43 @@
                 </div>
             </div>
         </nav>
-      </header>  
+      </header> 
+    <section class="banner">
+      <div class="banner-content">
+          <h1>O que é The Afterline?</h1>
+          <p>O inferno será uma esperiênçia vivida pelo personagem, sobreviver, desvendar mistérios e buscar por uma saída... se tiver coragem.</p>
+          <p>Após uma tentativa de suicídio, O protagonista acorda em um lugar desconhecido, cheio de perigos e segredos. Essa história pode ser interpretada como uma reflexão sobre as consequências do suicídio e uma representação metafórica de uma possível vida após a morte para aqueles que decidem tirar suas próprias vidas.</p>
+        </div>
+  </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+  <h1>VEJA MAIS SOBRE THE AFTERLINE</h1>
+  <div class="container-img">
+    <div class="grupo">
+        <div class="imagem-com-descricao">
+            <img src="Image/index/hellgate.jpg" class="grupo-img" />
+            <div class="descricao">Espere o inesperado<br>Os cenários estão cheios de surpresas. Descubra locais secretos e reviravoltas no desenrolar da campanha.</div>
+        </div>
+      
+        <div class="imagem-com-descricao">
+            <img src="Image/index/guns3.jpg" class="grupo-img" />
+            <div class="descricao">Como vai sobreviver?<br>Cuide bem e aprimore seu equipamento,<br>também vai precisar de artefatos especiais e mágicos.</div>
+        </div>
+      
+        <div class="imagem-com-descricao">
+            <img src="Image/index/inimigos.jpg" class="grupo-img" />
+            <div class="descricao">Inimigos te esperam<br>Pessoas estranhas vão aparecer durante a jornada,<br>cabe ao jogador saber como lidar com essas situações.</div>
+        </div>
+    </div>
+    <a href="compra.html"><button class="button-1">COMPRE AGORA</button></a>
+    <br>
+    <div class="footer">
+    <img src="Image/index/mature.jpg" />
+    </div>
+
+  
+
+       
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+  <body>
 </html>
