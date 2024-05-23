@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(Image/header/Sem\ Título-3.png);
+    color: white;
+    padding: 1em 0;
+    z-index: 1000;
+    justify-content: space-between; /* Alinha o conteúdo com espaço entre os elementos */
+}
+.navbar1 nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1; /* Faz com que o ul ocupe todo o espaço disponível */
+    justify-content: center; /* Centraliza os itens dentro do ul */
+    align-items: center;
+}
+
+.navbar1 nav ul li {
+    margin: 0 1em;
+}
+
+.navbar1 nav ul li.logo {
+    margin-right: auto; /* Empurra os outros itens para a direita */
+}
+
+.navbar1 nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 80px; /* Adiciona espaço suficiente para a barra de navegação fixa */
+}
+
+section {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+section h1 {
+    margin-bottom: 1em;
+}
+
+section p {
+    margin-bottom: 1em;
+}

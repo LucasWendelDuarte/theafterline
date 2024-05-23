@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(32, 26, 26) !important;
+}
+p,h1,h2,h3,label{
+  color: white;
+}
+
+.container-img {
+  height: 1100px;
+  display: block;
+  background-image: url(Image/index/primeiroparallax.png);
+  background-size: cover;
+
+
+}
+
+.blank,.other {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+.second {
+  display: block;
+  background-image:url(Image/index/segundoparallax.jpg);
+  height: 1200px;
+  margin-top: -100px; /* Negative margin to overlap the first image */
+    position: relative;
+    z-index: -1; /* Send the second image behind the first */
+}
+
+/*CRIANDO CONTA*//* Estilo para a caixa de texto sobreposta à imagem */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container-custom {
+  height: 100vh;
+}
+.left, .right {
+  height: 100%;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.right {
+  position: relative;
+}
+.right .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  text-align: center;
+}
+.right .image-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-20%);
+}
+.right img {
+  width: 100px;
+  margin: 10px;
+}
+.alinhamento{
+  transform: translateY(-20%);
+
+}
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+.container form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.container form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+.container form label {
+  margin-bottom: 5px;
+}
+.container form .checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container form .checkbox-group input {
+  margin-right: 5px;
+}
+.container form .submit-btn {
+  padding: 10px;
+  background: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+.container form .submit-btn:hover {
+  background: #003d80;
+}
+.container a {
+  color: #00aaff;
+  text-decoration: none;
+}
+.container a:hover {
+  text-decoration: underline;
+}
