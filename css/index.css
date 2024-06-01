@@ -12,7 +12,7 @@ p,h1,h2,h3,label{
 .container-img {
   height: 3500px;
   display: block;
-  background-image: url(Image/index/imgfundo.png);
+  background-image: url(../Image/index/imgfundo.png);
   background-size: cover;
 
 

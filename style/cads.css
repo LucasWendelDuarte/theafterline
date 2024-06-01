@@ -1,0 +1,22 @@
+#msgError {
+  color: #dd0000;
+  background-color: #ffbbbb;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+}
+#msgSuccess {
+  color: #00dd00;
+  background-color: #bbffbb;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+}
+.label-float input {
+  min-width: 350px;
+}
+.container {
+  margin-top: 60px;
+}
