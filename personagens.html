@@ -12,19 +12,50 @@
     </head>
     <body>
         <header class="navbar1">
-            <nav>
-                <ul>
-                    <li class="logo"><a href="#home"><img src="Image/logohome.png" alt="" style="width: 150px;"></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="compra.html">Compre Agora</a></li>
-                    <li><a href="sinopse.html">Sinopse</a></li>
-                    <li><a href="personagens.html">Personagens</a></li>
-                    <li><a href="proctcreation.html">Nosso Projeto</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-    
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-menu">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img style="width: 10vh; height: 4vh;" src="../theafterline/Image/logos/logotheafterBRANCAnavbar.png"/></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon "></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="compra.html">Compre Agora</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="sinopse.html">Sinopse</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                          <a class="nav-link" href="personagens.html">Personagens</a>
+                      </li>
+      
+                      <li class="nav-item">
+                          <a class="nav-link" href="proctcreation.html">Nosso Projeto</a>
+                      </li>
+                     
+                      <li class="nav-item">
+                      <a class="nav-link" href="contato.html" aria-disabled="true">Contato</a>
+                      </li>
+                      <li class="nav-item">
+                        <h4 class="nav-link" id="logado"></h4>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-outline-secondary" onclick="sair()" href="#">Entrar</button>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-outline-danger"  onclick="sair()">Entrar</button>
+                      </li> 
+                  </ul>
+                 
+                  </div>
+              </div>
             </nav>
-        </header> 
+          </header>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
