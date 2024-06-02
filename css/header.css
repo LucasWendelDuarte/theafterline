@@ -66,12 +66,8 @@ span.navbar-toggler-icon{
 
 }
 .navbar-toggler{
-    color: #00e1ff !important; /*Cor da borda antes e depois de clicar*/
+    color: #333) !important; /*Cor da borda antes e depois de clicar*/
     background-color: rgb(153, 153, 153) !important; /* cord do fundo antes e clicar*/
-}
-
-button .navbar-toggler{
-    background-color:#ff00b3 !important ; /* não funciona/ não faz nada*/
 }
 
 .navbar-toggler.collapsed{
