@@ -1,18 +1,17 @@
-body {
-    margin: 0;
-    padding: 0;
+body{
+    background-color: rgb(32, 26, 26) !important;
 }
+
 
 .navbar1 {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100% !important;
     height: 100px;
     background-image: url(../Image/index/Sem\ Título-3.png);
-    color: white;
-    padding: 1em 0;
-    z-index: 1000;
     justify-content: space-between; /* Alinha o conteúdo com espaço entre os elementos */
+    color: white;
+    font-family: Arial, sans-serif;
 }
 .navbar1 nav ul {
     list-style: none;
@@ -53,4 +52,31 @@ section h1 {
 
 section p {
     margin-bottom: 1em;
+}
+.bg-menu{
+    background-color: transparent;
+}
+.navbar-nav li a{
+    color: #ffffff !important;
+}
+
+
+span.navbar-toggler-icon{
+    color: #ff0000 !important; /* não funciona*/
+
+}
+.navbar-toggler{
+    color: #00e1ff !important; /*Cor da borda antes e depois de clicar*/
+    background-color: rgb(153, 153, 153) !important; /* cord do fundo antes e clicar*/
+}
+
+button .navbar-toggler{
+    background-color:#ff00b3 !important ; /* não funciona/ não faz nada*/
+}
+
+.navbar-toggler.collapsed{
+    background-color: rgb(36, 36, 36) !important; /*cor do fundo do botao depois de clicar*/
+}
+.widthbutton {
+    width: 100px;
 }
