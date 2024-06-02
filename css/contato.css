@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -14,9 +18,10 @@ h1, h3 {
 }
 
 .container {
-    background-color: #d9d9d948 ; 
+    background-color: rgb(32, 26, 26) ; 
     border-radius: 10px;
     padding: 20px;
+    margin-top: 500px;
 }
 
 form label {
@@ -36,7 +41,7 @@ form button {
     border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
     position: absolute;
     left: 45%;
-    top: 36%;
+    top: 39%;
     color: #000;
   }
 
@@ -44,4 +49,23 @@ form button {
     .linha-vertical {
         display: none;
     }
+    .control-icons{
+        margin-top: none;
+    }
+}
+.titulo-contato{
+    margin-top: 9vh;
+
+}
+
+.control-icons{
+    margin-top: 43%;
+}
+.icons{
+    margin-right: 30px;
+    
+}
+
+.sombra{
+    color: #00000049;
 }
