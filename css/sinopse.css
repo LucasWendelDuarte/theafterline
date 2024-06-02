@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    background-color: black;
+}
+
+/* TEMPLATE BANNER */
+.banner {
+    display: flex;
+    justify-content: center;
+    background-image: url("../Image/sinopse/segundoparallaxrasgado.png");
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #fff;
+    padding-top: 60px;
+    margin-left: -40px;
+}
+.banner-content a {
+    text-decoration: none;
+}
+
+.banner-content h1 {
+    font-size: 35px;
+    color: white;
+    font-family: 'Georgia';
+    text-align: left;
+  
+    text-shadow: 10px -20px 20px black;
+   
+}
+.banner-content p {
+    font-size: 28px;
+    color: white;
+    font-family: 'Georgia';
+    text-align: left;
+    text-shadow: 2px 15px 30px black;
+ 
+
+}  
+/* botao contato */
+.contato-btn {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(223, 34, 34);
+    color: white;
+    box-shadow: 0px 20px 20px rgb(0, 0, 0, 0.80);
+    text-align: center;
+    font-size: 22px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+}
+.contato-btn:hover {
+    background-color: #fff;
+    color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .banner-content {
+        margin-top: 95px;
+    }
+    .banner-content h1 {
+        font-size: 22;
+    }
+    .banner-content p {
+        font-size: 18px;
+    }
+    .banner-content img {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .banner-content h1 {
+        font-size: 22px;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+    }
+}
+
+/* AREA DE IMGS E DESCRIÇOÊS */
+.container-img {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-image: url("../Image/sinopse/BG.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 60px;
+}
+.grupo {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-com-descricao {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(230, 199, 199);
+    border-radius: 12px;
+    padding: 12px 8px;
+
+}
+
+.imagem-com-descricao img {
+    max-width: 400px;
+    height: 320px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    transition: opacity 0.5 ease;
+}
+.imagem-com-descricao img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+
+}
+.descricao {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    text-shadow: 0px 1px 1px;
+    padding: 15px;
+    font-family: 'Georgia';
+    background-color: rgb(230, 199, 199);
+}
+
+@media screen and (max-width: 768px) {
+    .grupo {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    
+    .imagem-com-descricao {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .imagem-com-descricao {
+        flex-basis: 100%;
+    }
+}
+
+/* SINOPSE DA PAGINA */
+h1 {
+    margin-top: 70px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 33px;
+}
+.text-area {
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.text-area p {
+    margin-top: 50px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: solid;
+  
+}
+@media (max-width: 768px) {
+    .text-area {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+}
+
+/* BOTAO DE COMPRA */
+.button-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: -30px;
+}
+.button-1 {
+    background-color: rgb(223, 34, 34);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 30px;
+}
+.button-1:hover {
+    background-color: white;
+    color: rgb(223, 34, 34);
+}
+@media (max-width: 768px) {
+    .button-1 {
+        font-size: 25px;
+        padding: 20px;
+    }
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: -60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens "quebrem" linha em telas menores */
+}
+.footer-container p {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    text-decoration: dotted;
+    text-shadow: 0px 0px 1px;
+}
+.footer-img {
+    max-width: 100%;
+    height: auto;
+    margin-left: -70px;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* Alinha as imagens em coluna em telas menores */
+    }
+    .footer-container p {
+        font-size: 22px;
+        padding: 10px;
+    }
+}
