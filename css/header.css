@@ -77,3 +77,6 @@ button .navbar-toggler{
 .navbar-toggler.collapsed{
     background-color: rgb(36, 36, 36) !important; /*cor do fundo do botao depois de clicar*/
 }
+.btn {
+    width: 100px;
+}

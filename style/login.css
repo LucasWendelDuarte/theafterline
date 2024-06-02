@@ -58,30 +58,6 @@ body {
   margin-top: 0;
   color: #999;
 }
-button {
-  background: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 35px;
-  transition: all 0.3s;
-}
-
-#msgError {
-  color: #dd0000;
-  background-color: #ffbbbb;
-  padding: 15px;
-  border-radius: 5px;
-  display: none;
-  text-align: center;
-}
-
 
 .num{
 	
@@ -99,7 +75,7 @@ button {
 }
 
 .glow-button {
-    width: 250px;
+    width: 400px;
     height: 50px;
     border: none;
     outline: none;
@@ -157,4 +133,7 @@ button {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+.botaoconvidado {
+  color:  #002bff;
 }

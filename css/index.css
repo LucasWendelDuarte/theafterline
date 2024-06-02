@@ -16,11 +16,10 @@ body {
 p,h1,h2,h3,label{
   color: white;
 }
-.white {
+.textb {
   color: white;
   font-family: Arial, sans-serif;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
