@@ -1,0 +1,21 @@
+.bodyCompra {
+    background: url('../Image/compra/backgroundCompra.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.form-container {
+    max-width: 500px;
+    background: rgba(104, 104, 104, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: darkred;
+}

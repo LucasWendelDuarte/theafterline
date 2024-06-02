@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Compra</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="../theafterline/css/header.css">
-
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-      <link type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-    </head>
-    <body>
-      <header class="navbar1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Jogo</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/compra.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+</head>
+<body class="bodyCompra">
+    <header class="navbar1">
         <nav class="navbar navbar-expand-lg bg-menu">
           <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img style="width: 100px;" src="../theafterline/Image/logos/logotheafterBRANCAnavbar.png"/></a>
@@ -20,10 +20,10 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="compra.html">Compre Agora</a>
+                      <a class="nav-link active" href="compra.html">Compre Agora</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="sinopse.html">Sinopse</a>
@@ -49,17 +49,64 @@
                     <h4 class="nav-link textb" id="logado"></h4>
                   </li>
                   <li class="nav-item">
-                    <button type="button" class="btn btn-secondary btn-sm" onclick="sair()" href="#">Entrar</button>
+                    <button type="button" class="btn btn-secondary btn-sm widthbutton" onclick="sair()" href="#">Entrar</button>
                   </li>
                   <li class="nav-item">
-                    <button type="button" class="btn btn-danger btn-sm"  onclick="sair()">Sair</button>
+                    <button type="button" class="btn btn-danger btn-sm widthbutton"  onclick="sair()">Sair</button>
                   </li> 
                 </ul>
               </div>
           </div>
         </nav>
       </header>
-    <script src="scripts/privado.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
-    </body>
+
+    <main class="d-flex justify-content-end align-items-center vh-100">
+        <div class="menu form-container">
+            <h1 class="texto1">Menu de Compra</h1>
+            <form action="/compra" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Sobre-nome:</label>
+                    <input type="text" id="sobre-nome" name="sobre-nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Rua:</label>
+                    <input type="email" id="rua" name="endereço" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Número:</label>
+                    <input type="email" id="numero" name="numero" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Complemento:</label>
+                    <input type="email" id="complemento" name="complemento" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ponto de referência:</label>
+                    <input type="email" id="referência" name="referência" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="pagamento">Forma de Pagamento:</label>
+                    <select id="pagamento" name="pagamento" class="form-control" required>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="paypal">Pix</option>
+                    </select>
+                </div>
+                <div style="padding-top: 10px;">
+                    <button type="submit" style="justify-content: center; background-color: rgb(141, 0, 0); color: white;" class="btn btn-red">Comprar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
