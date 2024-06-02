@@ -92,7 +92,8 @@ body {
 .container-img {
     max-width: 1200px;
     margin: 20px auto;
-    background-image: url("../Image/sinopse/BG.jpg");
+    background-color: #000000;
+    background-image: url(../Image/index/BG.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
