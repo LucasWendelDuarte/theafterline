@@ -28,7 +28,6 @@ p,h1,h2,h3,label{
   position: relative;
   z-index: 2;
   min-width: 300px;
-  top: -800px;
 }
 
 
@@ -43,9 +42,17 @@ p,h1,h2,h3,label{
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #2e0000;
 }
 
 /*--------------------------------------------------------------
 # FIM HERO Section
 --------------------------------------------------------------*/
+
+.logo{
+  position: relative;
+  top: -800px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
