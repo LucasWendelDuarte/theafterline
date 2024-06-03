@@ -1,0 +1,62 @@
+body {
+    /*COLOCAR "../"" PARA ACHAR AS IMAGENS*/
+    background-image: url('../Image/projectcreateon/imagem\ de\ fundo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+* {
+    color: white;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.member {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.member img {
+    width: 100%;
+    border-radius: 8px;
+}
+.member h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+.member p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #333;
+    color: #fff;
+}
