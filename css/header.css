@@ -12,6 +12,7 @@ body{
     justify-content: space-between; /* Alinha o conteúdo com espaço entre os elementos */
     color: white;
     font-family: Arial, sans-serif;
+    z-index: 9999; /* CORRECAO DO BUG DA NAVBAR */ 
 }
 .navbar1 nav ul {
     list-style: none;

@@ -19,12 +19,13 @@ body, html {
   justify-content: center;
   align-items: center;
 }
-*,p{
-  font-family: Arial, sans-serif;
+* ,p {
+  font-family: Gibson, sans-serif;
   color: white;
 }
+
 /*--------------------------------------------------------------
-# E O BATMANSAFNAJFNSAKFMA
+# BOTAO HOME
 --------------------------------------------------------------*/
 .btn-image {
   position: relative;
@@ -32,7 +33,7 @@ body, html {
   border: none;
   padding: 0;
   background-color: transparent !important;
-  margin: 10px;
+  margin: 15px;
 }
 
 .btn-image img {
@@ -45,11 +46,58 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  
 }
+/*--------------------------------------------------------------
+# CARROSEL
+--------------------------------------------------------------*/
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item img {
+  width: auto;
+  height: 200px; /* Ajuste a altura conforme necessário */
+}
+
+/*--------------------------------------------------------------
+# BOTAO NAVBAR
+--------------------------------------------------------------*/
+.btnnavbar-image {
+  position: relative;
+  display: inline-block;
+  border: none;
+  padding: 0;
+  background-color: transparent !important;
+
+}
+
+.btnnavbar-image img {
+  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+}
+
+.btnnavbar-image .btn-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+
 /*--------------------------------------------------------------
 # E O BATMANSAFNAJFNSAKFMA
 --------------------------------------------------------------*/
@@ -86,7 +134,7 @@ body, html {
 }
 .overlay {
   position: relative;
-  right: 500px;
+  right: 450px;
   z-index: 1;
   padding: 50px;
 }
