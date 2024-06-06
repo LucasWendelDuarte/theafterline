@@ -67,7 +67,7 @@ span.navbar-toggler-icon{
 
 }
 .navbar-toggler{
-    color: #333) !important; /*Cor da borda antes e depois de clicar*/
+    color: #333 !important; /*Cor da borda antes e depois de clicar*/
     background-color: rgb(153, 153, 153) !important; /* cord do fundo antes e clicar*/
 }
 
@@ -77,3 +77,28 @@ span.navbar-toggler-icon{
 .widthbutton {
     width: 100px;
 }
+/*--------------------------------------------------------------
+# BOTAO NAVBAR
+--------------------------------------------------------------*/
+.btnnavbar-image {
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    background-color: transparent !important;
+  
+  }
+  
+  .btnnavbar-image img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+  }
+  
+  .btnnavbar-image .btn-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  
+  }

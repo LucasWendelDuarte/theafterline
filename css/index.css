@@ -156,13 +156,16 @@ body, html {
 /*--------------------------------------------------------------
 # INICIO FOOTER
 --------------------------------------------------------------*/
+.ft{
+  transform: translateY(200px);
+}
 .newsletter-section {
-  background-image: url('../Image/index/img1.png'); /* Você precisa substituir isso pelo caminho real da imagem */
+  background-color: transparent ;
   background-size: cover;
   background-position: center;
   padding: 50px 0;
   text-align: center;
-  transform: translateY(200px);
+
   position: relative;
 }
 .newsletter-section::after {
@@ -181,7 +184,6 @@ body, html {
 .footer {
 
   width: 200vh;
-  transform: translateY(200px);
   padding: 20px 0;
   text-align: center;
 }
@@ -198,3 +200,7 @@ body, html {
 .footer .footer-links {
   margin-bottom: 20px;
 }
+/*--------------------------------------------------------------
+# INICIO Carrousel
+
+--------------------------------------------------------------*/
