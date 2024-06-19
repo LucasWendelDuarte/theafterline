@@ -1,9 +1,9 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado'))
 let logado = document.querySelector('#logado')
-logado.innerHTML = 'Olá '+userLogado.user
+logado.innerHTML = 'Olá '+ userLogado.user
 
 if (localStorage.getItem('token') == null) {
-    alert('Você não tem permissão para entar aqui, faça Login primeiro!')
+    alert('Faça Login primeiro!')
     window.location.href = 'login.html'
 }
 

@@ -8,10 +8,11 @@ body{
     top: 0;
     width: 100% !important;
     height: 100px;
-    background-image: url(../Image/index/Sem\ Título-3.png);
+    background-image: url(../Image/header/Sem\ Título-3.png);
     justify-content: space-between; /* Alinha o conteúdo com espaço entre os elementos */
     color: white;
     font-family: Arial, sans-serif;
+    z-index: 9999; /* CORRECAO DO BUG DA NAVBAR */ 
 }
 .navbar1 nav ul {
     list-style: none;
@@ -66,7 +67,7 @@ span.navbar-toggler-icon{
 
 }
 .navbar-toggler{
-    color: #333) !important; /*Cor da borda antes e depois de clicar*/
+    color: #333 !important; /*Cor da borda antes e depois de clicar*/
     background-color: rgb(153, 153, 153) !important; /* cord do fundo antes e clicar*/
 }
 
@@ -76,3 +77,28 @@ span.navbar-toggler-icon{
 .widthbutton {
     width: 100px;
 }
+/*--------------------------------------------------------------
+# BOTAO NAVBAR
+--------------------------------------------------------------*/
+.btnnavbar-image {
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    background-color: transparent !important;
+  
+  }
+  
+  .btnnavbar-image img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+  }
+  
+  .btnnavbar-image .btn-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  
+  }
