@@ -8,7 +8,7 @@ body, html {
   background-image: url('../Image/index/imgfundo.png'); /* Substitua pela URL da sua imagem */
   background-size: cover;
   background-position: center;
-  height: 2660px;
+  height:1480px;
   display: flex;
   flex-direction: column;
 }
@@ -157,7 +157,8 @@ body, html {
 # INICIO FOOTER
 --------------------------------------------------------------*/
 .ft{
-  transform: translateY(200px);
+  transform: translateY(125px);
+  width: 200vh;
 }
 .newsletter-section {
   background-color: transparent ;
@@ -183,7 +184,7 @@ body, html {
 }
 .footer {
 
-  width: 200vh;
+
   padding: 20px 0;
   text-align: center;
 }
