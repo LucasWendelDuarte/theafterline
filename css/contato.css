@@ -35,23 +35,36 @@ form .form-control {
 form button {
     width: 100%;
 }
+.row{
+    position: relative;
+    display: flex;
+}
+.box-principal{
+    position: relative;
+    display: flex;
+    align-items: first baseline;
+}
 
 .linha-vertical {
-    height: 400px;/*Altura da linha*/
+    height: 100%;
     border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
     position: absolute;
-    left: 45%;
-    top: 39%;
+    display: flex;
+
+    left: 40%;
+    top: 0%;
     color: #000;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 990px) {
     .linha-vertical {
         display: none;
     }
-    .control-icons{
-        margin-top: none;
+    .box-principal{
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
 }
 .titulo-contato{
     margin-top: 9vh;
@@ -64,8 +77,4 @@ form button {
 .icons{
     margin-right: 30px;
     
-}
-
-.sombra{
-    color: #00000049;
 }
