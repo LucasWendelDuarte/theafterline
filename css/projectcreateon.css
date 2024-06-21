@@ -4,7 +4,10 @@ body {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+<<<<<<< HEAD
     font-family: white, sans-serif;
+=======
+>>>>>>> 6de4727090e26e0f22db76afe9f7735ef2d95d3f
     margin: 0;
     padding: 0;
 }
