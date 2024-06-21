@@ -4,7 +4,7 @@ body {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    font-family: Arial, sans-serif;
+    font-family: white, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +12,7 @@ body {
     color: white;
 }
 .cabecalho {
+    margin-top: 30vh;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -27,7 +28,7 @@ body {
     width: 300px;
     margin: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #b63333;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -43,20 +44,29 @@ body {
 .member p {
     margin-top: 10px;
     font-size: 18px;
-    color: #666;
+    color: #443a3a;
     text-align: center;
 }
-table {
+.table-2 {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+    border: 1px solid white;
 }
-th, td {
-    border: 1px solid #ddd;
+table tr td {
+    border: 1px solid #cccccc;
     padding: 8px;
     text-align: center;
+    background-color: #272222;
 }
-th {
-    background-color: #333;
-    color: #fff;
+table tr th {
+    background-color: #251b1b;
+    color: #e9e9e9;
+    padding: 8px;
+    border: 1px solid #cccccc;
+ 
+}
+tr {
+    padding: 8px;
+    text-align: center;
 }
